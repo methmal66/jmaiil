@@ -1,4 +1,4 @@
-package lk.methmal;
+package lk.methmal.jmail;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;

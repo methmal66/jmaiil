@@ -1,4 +1,4 @@
-package lk.methmal;
+package lk.methmal.jmail;
 
 import java.util.Properties;
 import javax.mail.*;
