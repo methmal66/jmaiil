@@ -12,7 +12,10 @@ public class App {
                 .set("methmal66@yahoo.com",
                         "methmal66@gmail.com",
                         "This is a test");
-        EasyTransport port = new EasyTransport(ses);
-        port.sendMessage(email);
+
+        Transport port = ses.getTransport("smtp");
+        port.connect();
+        port.sendMessage(email, email.getRecipients(Message.RecipientType.TO));
+        port.close();
     }
 }
